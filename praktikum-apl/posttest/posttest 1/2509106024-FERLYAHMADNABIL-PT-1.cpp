@@ -5,13 +5,14 @@ int main() {
     string namaUser, passwordUser;
     int percobaanLogin = 0;
     int pilihanMenu;
+    bool loginBerhasil = false;
     
     double nilaiMeter, nilaiKilometer, nilaiCentimeter;
     double hasilMeter, hasilKilometer, hasilCentimeter;
 
     cout << "====== SISTEM KONVERSI PANJANG =======\n";
 
-    while (percobaanLogin < 3) {
+    while (percobaanLogin < 3 && !loginBerhasil) {
         cout << "\n===== LOGIN =====\n";
         cout << "Masukkan Nama     : ";
         cin >> namaUser;
@@ -20,21 +21,20 @@ int main() {
 
         if (namaUser == "nabil" && passwordUser == "024") {
             cout << "\nLogin Berhasil!\n";
-            break;
+            loginBerhasil = true;
         } else {
             percobaanLogin++;
             cout << "Login Gagal! Percobaan ke-" << percobaanLogin << endl;
         }
     }
 
-    if (percobaanLogin == 3) {
+    if (!loginBerhasil) {
         cout << "\nAkses Ditolak! Program Berhenti.\n";
         return 0;
     }
 
     do {
-   
-        cout << "============MENU UTAMA============\n";
+        cout << "\n============MENU UTAMA============\n";
         cout << "1. Meter ke Kilometer dan Centimeter\n";
         cout << "2. Kilometer ke Meter dan Centimeter\n";
         cout << "3. Centimeter ke Meter dan Kilometer\n";
@@ -42,40 +42,35 @@ int main() {
         cout << "Pilih Menu (1-4): ";
         cin >> pilihanMenu;
 
-        switch (pilihanMenu) {
-            case 1:
-                cout << "\nMasukkan nilai dalam Meter: ";
-                cin >> nilaiMeter;
-                hasilKilometer = nilaiMeter / 1000;
-                hasilCentimeter = nilaiMeter * 100;
-                cout << "Hasil: " << hasilKilometer << " km dan "
-                     << hasilCentimeter << " cm\n";
-                break;
-
-            case 2:
-                cout << "\nMasukkan nilai dalam Kilometer: ";
-                cin >> nilaiKilometer;
-                hasilMeter = nilaiKilometer * 1000;
-                hasilCentimeter = nilaiKilometer * 100000;
-                cout << "Hasil: " << hasilMeter << " m dan "
-                     << hasilCentimeter << " cm\n";
-                break;
-
-            case 3:
-                cout << "\nMasukkan nilai dalam Centimeter: ";
-                cin >> nilaiCentimeter;
-                hasilMeter = nilaiCentimeter / 100;
-                hasilKilometer = nilaiCentimeter / 100000;
-                cout << "Hasil: " << hasilMeter << " m dan "
-                     << hasilKilometer << " km\n";
-                break;
-
-            case 4:
-                cout << "\nTerima kasih telah menggunakan program.\n";
-                break;
-
-            default:
-                cout << "Pilihan tidak valid!\n";
+        if (pilihanMenu == 1) {
+            cout << "\nMasukkan nilai dalam Meter: ";
+            cin >> nilaiMeter;
+            hasilKilometer = nilaiMeter / 1000;
+            hasilCentimeter = nilaiMeter * 100;
+            cout << "Hasil: " << hasilKilometer << " km dan "
+                 << hasilCentimeter << " cm\n";
+        }
+        else if (pilihanMenu == 2) {
+            cout << "\nMasukkan nilai dalam Kilometer: ";
+            cin >> nilaiKilometer;
+            hasilMeter = nilaiKilometer * 1000;
+            hasilCentimeter = nilaiKilometer * 100000;
+            cout << "Hasil: " << hasilMeter << " m dan "
+                 << hasilCentimeter << " cm\n";
+        }
+        else if (pilihanMenu == 3) {
+            cout << "\nMasukkan nilai dalam Centimeter: ";
+            cin >> nilaiCentimeter;
+            hasilMeter = nilaiCentimeter / 100;
+            hasilKilometer = nilaiCentimeter / 100000;
+            cout << "Hasil: " << hasilMeter << " m dan "
+                 << hasilKilometer << " km\n";
+        }
+        else if (pilihanMenu == 4) {
+            cout << "\nTerima kasih telah menggunakan program.\n";
+        }
+        else {
+            cout << "Pilihan tidak valid!\n";
         }
 
     } while (pilihanMenu != 4);
