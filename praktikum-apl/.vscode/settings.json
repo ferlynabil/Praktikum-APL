@@ -1,0 +1,202 @@
+{
+  "editor.tokenColorCustomizations": {
+    "textMateRules": [
+      {
+        "scope": [
+          "keyword.control",
+          "keyword.other.using",
+          "storage.type.namespace",
+          "keyword.control.directive"
+        ],
+        "settings": {
+          "foreground": "#FF79C6"
+        }
+      },
+      {
+        "scope": [
+          "storage.type.cpp",
+          "storage.type.c",
+          "storage.type.primitive",
+          "storage.type.built-in"
+        ],
+        "settings": {
+          "foreground": "#F1C40F"
+        }
+      },
+      {
+        "scope": [
+          "entity.name.function",
+          "entity.name.function.cpp",
+          "entity.name.function.definition",
+          "entity.name.function.call"
+        ],
+        "settings": {
+          "foreground": "#61AFEF"
+        }
+      },
+      {
+        "scope": [
+          "variable.parameter",
+          "variable.other.cpp",
+          "variable.other.local"
+        ],
+        "settings": {
+          "foreground": "#E5C07B"
+        }
+      },
+      {
+        "scope": [
+          "string.quoted.double",
+          "string.quoted.single",
+          "string.quoted.other"
+        ],
+        "settings": {
+          "foreground": "#98C379"
+        }
+      },
+      {
+        "scope": [
+          "entity.name.namespace",
+          "support.type",
+          "entity.name.type",
+          "entity.name.type.class"
+        ],
+        "settings": {
+          "foreground": "#56B6C2"
+        }
+      },
+      {
+        "scope": [
+          "support.function",
+          "support.variable",
+          "variable.other.object"
+        ],
+        "settings": {
+          "foreground": "#FF79C6"
+        }
+      },
+      {
+        "scope": [
+          "constant.numeric",
+          "constant.language",
+          "constant.character"
+        ],
+        "settings": {
+          "foreground": "#BD93F9"
+        }
+      },
+      {
+        "scope": [
+          "comment.line",
+          "comment.block"
+        ],
+        "settings": {
+          "foreground": "#6272A4",
+          "fontStyle": "italic"
+        }
+      },
+      {
+        "scope": [
+          "meta.preprocessor",
+          "entity.name.function.preprocessor",
+          "keyword.control.directive.include"
+        ],
+        "settings": {
+          "foreground": "#FF79C6"
+        }
+      },
+      {
+        "scope": [
+          "punctuation.definition.string",
+          "punctuation.section.angle-bracket"
+        ],
+        "settings": {
+          "foreground": "#98C379"
+        }
+      },
+      {
+        "scope": [
+          "entity.name.class",
+          "entity.name.type.class"
+        ],
+        "settings": {
+          "foreground": "#FFB86C"
+        }
+      },
+      {
+        "scope": [
+          "variable.other.member",
+          "variable.other.property"
+        ],
+        "settings": {
+          "foreground": "#E5C07B"
+        }
+      },
+      {
+        "scope": [
+          "keyword.operator"
+        ],
+        "settings": {
+          "foreground": "#FF79C6"
+        }
+      }
+    ]
+  },
+  "C_Cpp_Runner.cCompilerPath": "gcc",
+  "C_Cpp_Runner.cppCompilerPath": "g++",
+  "C_Cpp_Runner.debuggerPath": "gdb",
+  "C_Cpp_Runner.cStandard": "",
+  "C_Cpp_Runner.cppStandard": "",
+  "C_Cpp_Runner.msvcBatchPath": "C:/Program Files/Microsoft Visual Studio/VR_NR/Community/VC/Auxiliary/Build/vcvarsall.bat",
+  "C_Cpp_Runner.useMsvc": false,
+  "C_Cpp_Runner.warnings": [
+    "-Wall",
+    "-Wextra",
+    "-Wpedantic",
+    "-Wshadow",
+    "-Wformat=2",
+    "-Wcast-align",
+    "-Wconversion",
+    "-Wsign-conversion",
+    "-Wnull-dereference"
+  ],
+  "C_Cpp_Runner.msvcWarnings": [
+    "/W4",
+    "/permissive-",
+    "/w14242",
+    "/w14287",
+    "/w14296",
+    "/w14311",
+    "/w14826",
+    "/w44062",
+    "/w44242",
+    "/w14905",
+    "/w14906",
+    "/w14263",
+    "/w44265",
+    "/w14928"
+  ],
+  "C_Cpp_Runner.enableWarnings": true,
+  "C_Cpp_Runner.warningsAsError": false,
+  "C_Cpp_Runner.compilerArgs": [],
+  "C_Cpp_Runner.linkerArgs": [],
+  "C_Cpp_Runner.includePaths": [],
+  "C_Cpp_Runner.includeSearch": [
+    "*",
+    "**/*"
+  ],
+  "C_Cpp_Runner.excludeSearch": [
+    "**/build",
+    "**/build/**",
+    "**/.*",
+    "**/.*/**",
+    "**/.vscode",
+    "**/.vscode/**"
+  ],
+  "C_Cpp_Runner.useAddressSanitizer": false,
+  "C_Cpp_Runner.useUndefinedSanitizer": false,
+  "C_Cpp_Runner.useLeakSanitizer": false,
+  "C_Cpp_Runner.showCompilationTime": false,
+  "C_Cpp_Runner.useLinkTimeOptimization": false,
+  "C_Cpp_Runner.msvcSecureNoWarnings": false
+}
