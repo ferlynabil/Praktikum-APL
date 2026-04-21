@@ -3,7 +3,6 @@
 #include <iomanip>
 #include <cstdlib>
 #include <algorithm>
-#include <cctype>
 
 using namespace std;
 
